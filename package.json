@@ -1,0 +1,26 @@
+{
+  "name": "pro-mern-stack-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w server -e js,graphql server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src --presets @babel/react --out-dir public",
+    "watch": "babel src --presets @babel/react --out-dir public --watch --verbose"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "apollo-server-express": "^2.26.2",
+    "express": "^4.21.2",
+    "graphql": "^0.13.2",
+    "mongodb": "^3.7.4",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.1",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-react": "^7.27.1"
+  }
+}
